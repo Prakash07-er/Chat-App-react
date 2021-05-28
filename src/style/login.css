@@ -1,0 +1,72 @@
+.login {
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    place-items: center;
+}
+.login_container {
+    padding: 100px;
+    text-align: center;
+    background: #333641;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px;
+}
+.login_container > img {
+    object-fit: contain;
+    height: 150px;
+    margin-bottom: 40px;
+    transition: all .2s;
+}
+.login_container > img:hover{
+    height: 155px;
+}
+.login_container > img:hover {
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+h1{
+    color: white;
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.login_container > button {
+    margin-top: 50px;
+    text-transform: inherit !important;
+    background-color: #0a8d48 !important;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    outline: none;
+    text-transform: uppercase;
+    transition: background 0.8s;
+}
+.login_container > button:hover {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(25, 228, 174, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(4, 194, 143, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(14, 216, 162, 0);
+    }
+  }
